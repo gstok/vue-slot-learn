@@ -6,8 +6,9 @@
 <template>
     <div>
         <list>
-            <div slot="mySlot" slot-scope="sprops">
-                <input type="button" :value="sprops" />
+            <div slot="mySlot" slot-scope="{ item: { name } }">
+                <span>{{ name }}</span>
+                <!-- <input type="button" :value="sprops.item.name" /> -->
             </div>
         </list>
     </div>
