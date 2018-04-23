@@ -5,12 +5,7 @@
 
 <template>
     <div>
-        <slot>
-            <input type="button" value="我是默认的按钮" />
-            {{ msg }}
-        </slot>
-        <!-- <slot name="slot1"></slot>
-        <slot name="slot2"></slot> -->
+        <slot :text="msg" haha="那你呢"></slot>
     </div>
 </template>
 
@@ -21,6 +16,11 @@
             return {
                 msg: "你好，世界2"
             }
+        },
+        mounted () {
+            setInterval(() => {
+                this.msg += ".";
+            }, 1000);
         }
     };
 </script>

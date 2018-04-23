@@ -5,15 +5,17 @@
 
 <template>
     <div>
-        {{ msg }}
-        <test>
-            <!-- {{ msg }} -->
-        </test>
+        <list>
+            <div slot="mySlot" slot-scope="sprops">
+                <input type="button" :value="sprops" />
+            </div>
+        </list>
     </div>
 </template>
 
 <script>
     import test from "./test.vue";
+    import list from "./list.vue";
 
     export default {
         name: "app",
@@ -23,7 +25,8 @@
             };
         },
         components: {
-            test
+            test,
+            list
         }
     };
 </script>
