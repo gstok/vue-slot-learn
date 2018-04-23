@@ -46,6 +46,26 @@
                     },
                 ]
             };
+        },
+
+        methods: {
+            // ...{
+            //     func3: () => {
+            //         console.log(3);
+            //     },
+            //     func4: () => {
+            //         console.log(4);
+            //     }
+            // },
+            // func1 () {
+            //     console.log(1);
+            // },
+            // func2 () {
+            //     console.log(2);
+            // }
+        },
+        mounted () {
+            // this.func1();
         }
     };
 </script>
